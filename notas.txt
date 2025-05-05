@@ -1,0 +1,79 @@
+upgrade react and libraries
+npm i react@latest react-dom@latest
+
+update all dependecies
+npx npm-check-updates
+
+This command will check every installed dependency and compare the current version with the latest version in the npm registry. It is printed out into a table outlining available versions.
+npm outdated
+
+To upgrade dependencies, you just need to run:
+ncu --upgrade
+// or 
+ncu -u
+
+docker------ 
+docker run -p 27017:27017 --name mongodb -d mongodb/mongodb-community-server:6.0.5-ubi8
+docker start mongodb
+docker stop mongodb
+docker exec -it mongodb sh
+
+mongodb--------
+si tu base de datos es test digitar
+mongosh
+
+sino ejemplo
+mongosh "mongodb://127.0.0.1:27017/video"
+
+show collections
+
+eliminar los registros de la base de datos
+db.users.remove({})
+db.videos.remove({})
+db.notifications.remove({})
+db.users.find()
+
+seleccionar la base de datos
+use database
+
+mostrar las bases de datos
+show dbs
+
+eliminar base de datos
+db.dropDatabase()
+
+frontend
+
+snipes
+imr  →	import React from 'react'
+imrse  →	import React, { useState, useEffect } from 'react'
+rfc
+rfce
+
+npm create vite@latest
+npm i react-hot-toast react-router-dom axios react-icons @reduxjs/toolkit
+
+
+
+
+react icons cheat
+https://react-icons.github.io/react-icons/icons/bs/
+
+backend 
+
+npm i express jsonwebtoken cors cookie-parser multer mongoose bcryptjs dotenv
+npm i -D nodemon
+
+generate JWTSecret
+openssl rand -base64 32
+
+lsof -i tcp:5000
+lsof -i tcp:3000
+kill -9 pid
+
+pm2
+npx pm2 start file.js
+npx pm2 list
+npx pm2 delete 0
+npx pm2 monit o npx pm2 monit 0
+npx pm2 logs o npx pm2 logs 0

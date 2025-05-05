@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #202020;
+    color: white;
+  }
+  
+  .navbar input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+  }
+
+ .navbar > .form > form > button {
+    margin-left: 2em;
+    padding: 0.5em;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+  }
+
+  .navbar > .link > a >h1  {
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .navbar > .user {
+
+    text-align: center;
+
+  }
+
+
+
+
+
+  @media (max-width: 548px) {
+    .navbar {
+      display: block;
+    }
+
+    .navbar > .link{
+      text-align: center;
+    }
+
+    .navbar > .form{
+      margin-top: 1em;
+      margin-bottom: 1em;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+
+    .navbar > .form > form > button {
+
+      margin-top: 1em;
+      text-align: center;
+      
+      
+    }
+  }
